@@ -12,19 +12,19 @@ public class Lab2 {
                 InetAddress address = InetAddress.getByName(ip);
                 System.out.println("IP Address: " + address.getHostAddress());
 
-                // Check if the address is multicast
+                // multicast ho ki vanera check gareko
                 if (address.isMulticastAddress()) {
                     System.out.println("This is a Multicast Address.");
                 }
-                // Check if the address is broadcast
+                // yedi broadcast po ho ki?
                 else if ("255.255.255.255".equals(address.getHostAddress())) {
                     System.out.println("This is a Broadcast Address.");
                 }
-                // Otherwise, it's a unicast address
+                // tyo duitai navaye ta unicast ho pakka
                 else {
                     System.out.println("This is a Unicast Address.");
                 }
-                System.out.println();  // Add space between results
+                System.out.println();  
             }
 
         } catch (UnknownHostException e) {
